@@ -6,11 +6,11 @@ import * as chat from "chat";
 
 
 chat.registerCmd("poweroff", player => {
-    alt.emitClient(alt.Player.all, "blackouton");
+    alt.emitAllClients("blackouton");
 });
 
 chat.registerCmd("poweron", player => {
-    alt.emitClient(alt.Player.all, "blackoutoff");
+    alt.emitAllClients("blackoutoff");
 });
 
 
